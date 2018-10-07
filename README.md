@@ -60,16 +60,16 @@ This project is using semantic-release to automatic handling of the version of y
 
 This project is using the following awesome libraries/utilities/services:
 
-- [babel 7][https://babeljs.io/]
-- [better-npm-run][https://github.com/benoror/better-npm-run]
-- [commitizen][http://commitizen.github.io/cz-cli]
-- [esdoc][https://esdoc.org/]
-- [eslint][https://eslint.org/]
-- [flow][https://flow.org/]
-- [jest][https://jestjs.io/]
-- [npm-run-all][https://github.com/mysticatea/npm-run-all]
-- [rollup][https://rollupjs.org/]
-- [semantic-release][https://github.com/semantic-release/semantic-release]
+- [babel 7](https://babeljs.io/)
+- [better-npm-run](https://github.com/benoror/better-npm-run)
+- [commitizen](http://commitizen.github.io/cz-cli)
+- [esdoc](https://esdoc.org/)
+- [eslint](https://eslint.org/)
+- [flow](https://flow.org/)
+- [jest](https://jestjs.io/)
+- [npm-run-all](https://github.com/mysticatea/npm-run-all)
+- [rollup](https://rollupjs.org/)
+- [semantic-release](https://github.com/semantic-release/semantic-release)
 
 <a name="inst"></a>
 ## Installation: ##

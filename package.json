@@ -17,9 +17,8 @@
     "dev:watch": "npx rollup -c --environment BUILD:development -w",
     "esdoc": "npx esdoc",
     "lint": "better-npm-run lint",
-    "release": "npx run-s test release:pre release:post",
-    "release:post": "npx semantic-release post",
-    "release:pre": "npx semantic-release pre",
+    "release": "npx run-s test release:pre",
+    "release:pre": "npx semantic-release",
     "release:publish": "npm publish"
   },
   "keywords": [

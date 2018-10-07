@@ -37,9 +37,9 @@ Then:
   - Change the name of the project to your project name.
   - Change the version to 0.1.0
   - If you want to release a npm package then change:
-    "release": "npx run-s test release:pre release:post"
+    "release": "npx run-s test release:pre"
     to:
-    "release": "npx run-s test release:pre release:publish release:post"
+    "release": "npx run-s test release:pre release:publish"
 
 The boilerplate without any changes supporting creating a library for both CommonJS, es6 modules, amd and browser. If you don't need all of this then just edit the rollup.config.js file and remove the inputs that you don't need.
 
@@ -50,10 +50,17 @@ $ git init
 $ git remote add origin https://github.com/your-name/your-project-name.git
 $ git add -A
 $ npm run commit
-$ git push -u origin master
+$ git push origin master
 ```
 
-This project is using semantic-release to automatic handling of the version of your library.
+This project is using [semantic-release](https://github.com/semantic-release/semantic-release) to automatic handling of the version of your library. To be able to automatic release a new version you must configure Travis-CI to your new project:
+
+- Go to [https://travis-ci.org/](https://travis-ci.org/) and either signup or signin.
+- Select your new project and click setting.
+- You MUST configure a token or [semantic-release](https://github.com/semantic-release/semantic-release) will not be able to commit changes:
+  - Create a new token (see [here](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) how to do it).
+  - In your Travis-CI project setting, go to the environment settings section and add a new environment variable with the name 'GH_TOKEN' and the generated token as the data.
+- To test everything just push something into github and it should update everything automatic!
 
 <a name="features"></a>
 ## Features: ##
@@ -113,6 +120,7 @@ $ npm install library-boilerplate
 - test
 - flow
 - lint
+
 ### Tests: ###
 
 Tests:

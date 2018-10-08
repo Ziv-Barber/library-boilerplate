@@ -68,7 +68,7 @@ This project is using [semantic-release](https://github.com/semantic-release/sem
 Allow doing npm publish automatically by [semantic-release](https://github.com/semantic-release/semantic-release):
 
 - You need a npm token (see [here](https://docs.npmjs.com/getting-started/working_with_tokens#how-to-create-new-tokens)) and add it as the NPM_TOKEN environment variable to Travis-CI like you did with the GH_TOKEN for github.
-- Update the release section in package.json and add '@semantic-release/npm' to both 'publishConfig' and 'verifyConditions'.
+- Update the release section in package.json and add '@semantic-release/npm' to both 'prepare', 'publish' and 'verifyConditions'.
 
 <a name="features"></a>
 ## Features: ##

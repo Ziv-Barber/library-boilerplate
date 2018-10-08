@@ -16,8 +16,10 @@
     "dev": "npx rollup -c --environment BUILD:development",
     "dev:watch": "npx rollup -c --environment BUILD:development -w",
     "esdoc": "npx esdoc",
+    "flow": "npx flow",
     "lint": "better-npm-run lint",
-    "release": "npx run-s test release:sr",
+    "release": "npx run-s release:check release:sr",
+    "release:check": "npx run-s clean build test:badges flow lint",
     "release:sr": "npx semantic-release"
   },
   "keywords": [
@@ -107,9 +109,11 @@
     }
   },
   "release": {
-    "publishConfig": [
+    "prepare": [],
+    "publish": [
       "@semantic-release/github"
     ],
+    "npmPublish": false,
     "verifyConditions": [
       "@semantic-release/github"
     ]

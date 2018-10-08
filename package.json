@@ -1,6 +1,6 @@
 {
   "name": "library-boilerplate",
-  "version": "0.1.0",
+  "version": "0.0.0-semantic-release",
   "description": "Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc and live editing.",
   "scripts": {
     "start": "better-npm-run start",
@@ -17,9 +17,8 @@
     "dev:watch": "npx rollup -c --environment BUILD:development -w",
     "esdoc": "npx esdoc",
     "lint": "better-npm-run lint",
-    "release": "npx run-s test release:pre",
-    "release:pre": "npx semantic-release",
-    "release:publish": "npm publish"
+    "release": "npx run-s test release:sr",
+    "release:sr": "npx semantic-release"
   },
   "keywords": [
     "boilerplate",
@@ -106,5 +105,13 @@
         "NODE_ENV": "development"
       }
     }
+  },
+  "release": {
+    "publishConfig": [
+      "@semantic-release/github"
+    ],
+    "verifyConditions": [
+      "@semantic-release/github"
+    ]
   }
 }

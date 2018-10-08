@@ -7,6 +7,7 @@ Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc
 [![coverage lines](./coverage/badge-lines.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
 [![coverage functions](./coverage/badge-functions.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![build status](https://travis-ci.org/undefined/library-boilerplate.svg?branch&#x3D;master)](https://travis-ci.org/undefined/library-boilerplate)
 
 ![library-boilerplate logo](https://cdn-images-1.medium.com/max/1500/1*LQbS9RgHy93y9JH8ltejuQ.jpeg)
 
@@ -30,18 +31,9 @@ Start with cloning the project:
 $ git clone --depth=1 git://github.com/Ziv-Barber/library-boilerplate.git your-project-name
 ```
 
-Then:
-
-- Remove the .git directory.
-- Edit package.json:
-  - Change the name of the project to your project name.
-  - Change the version to 0.1.0
-  - If you want to release a npm package then change:
-    "release": "npx run-s test release:pre"
-    to:
-    "release": "npx run-s test release:pre release:publish"
-
-The boilerplate without any changes supporting creating a library for both CommonJS, es6 modules, amd and browser. If you don't need all of this then just edit the rollup.config.js file and remove the inputs that you don't need.
+- Remove the .git directory (rm -rf your-project-name/.git).
+- Edit package.json and change the name of the project to your project name.
+- The boilerplate without any changes supporting creating a library for both CommonJS, es6 modules, amd and browser. If you don't need all of this then just edit the rollup.config.js file and remove the inputs that you don't need.
 
 Now, create a new github project and do:
 	
@@ -59,8 +51,24 @@ This project is using [semantic-release](https://github.com/semantic-release/sem
 - Select your new project and click setting.
 - You MUST configure a token or [semantic-release](https://github.com/semantic-release/semantic-release) will not be able to commit changes:
   - Create a new token (see [here](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) how to do it).
+  - Permissions needed in the github token:
+    - repo:
+      - repo:status
+      - repo_deployment
+      - public_repo
+    - admin:org:
+      - read:org
+    - admin:repo_hook:
+      - write:repo_hook
+    - user:
+      - user:email
   - In your Travis-CI project setting, go to the environment settings section and add a new environment variable with the name 'GH_TOKEN' and the generated token as the data.
 - To test everything just push something into github and it should update everything automatic!
+
+Allow doing npm publish automatically by [semantic-release](https://github.com/semantic-release/semantic-release):
+
+- You need a npm token (see [here](https://docs.npmjs.com/getting-started/working_with_tokens#how-to-create-new-tokens)) and add it as the NPM_TOKEN environment variable to Travis-CI like you did with the GH_TOKEN for github.
+- Update the release section in package.json and add '@semantic-release/npm' to both 'publishConfig' and 'verifyConditions'.
 
 <a name="features"></a>
 ## Features: ##

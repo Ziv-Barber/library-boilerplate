@@ -6,8 +6,10 @@ Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc
 [![coverage statements](./coverage/badge-statements.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
 [![coverage lines](./coverage/badge-lines.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
 [![coverage functions](./coverage/badge-functions.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
+[![dependencies](https://david-dm.org/Ziv-Barber/library-boilerplate.svg)](https://david-dm.org/Ziv-Barber/library-boilerplate)
+[![devDependencies](https://david-dm.org/Ziv-Barber/library-boilerplate.svg)](https://david-dm.org/Ziv-Barber/library-boilerplate#info&#x3D;devDependencies)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![build status](https://travis-ci.org/undefined/library-boilerplate.svg?branch&#x3D;master)](https://travis-ci.org/undefined/library-boilerplate)
+[![build status](https://travis-ci.org/Ziv-Barber/library-boilerplate.svg?branch&#x3D;master)](https://travis-ci.org/Ziv-Barber/library-boilerplate)
 
 ![library-boilerplate logo](https://cdn-images-1.medium.com/max/1500/1*LQbS9RgHy93y9JH8ltejuQ.jpeg)
 

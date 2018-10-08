@@ -3,7 +3,7 @@ import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
 import packageJson from './package.json'
 import resolve from 'rollup-plugin-node-resolve'
-import {terser as uglify} from 'rollup-plugin-terser'
+import { terser as uglify } from 'rollup-plugin-terser'
 var inputFile = 'lib/index.js'
 
 let config = [

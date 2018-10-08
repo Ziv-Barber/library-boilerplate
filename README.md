@@ -6,8 +6,8 @@ Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc
 [![coverage statements](./coverage/badge-statements.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
 [![coverage lines](./coverage/badge-lines.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
 [![coverage functions](./coverage/badge-functions.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
-[![dependencies](https://david-dm.org/Ziv-Barber/library-boilerplate.svg)](https://david-dm.org/Ziv-Barber/library-boilerplate)
-[![devDependencies](https://david-dm.org/Ziv-Barber/library-boilerplate.svg)](https://david-dm.org/Ziv-Barber/library-boilerplate#info&#x3D;devDependencies)
+[![dependencies](https://david-dm.org/Ziv-Barber/library-boilerplate.svg?style&#x3D;flat-square)](https://david-dm.org/Ziv-Barber/library-boilerplate)
+[![devDependencies](https://david-dm.org/Ziv-Barber/library-boilerplate/dev-status.svg?style&#x3D;flat-square)](https://david-dm.org/Ziv-Barber/library-boilerplate#info&#x3D;devDependencies)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![build status](https://travis-ci.org/Ziv-Barber/library-boilerplate.svg?branch&#x3D;master)](https://travis-ci.org/Ziv-Barber/library-boilerplate)
 
@@ -112,7 +112,17 @@ $ npm install library-boilerplate
 <a name="ref"></a>
 ## API: ##
 
-???.
+To create the library api:
+
+```bash
+$ yarn esdoc
+```
+
+or:
+
+```bash
+$ npm run esdoc
+```
 
 <a name="code"></a>
 ## The source code: ##
@@ -177,7 +187,9 @@ npm lint
 ## Variations: ##
 
 - library-boilerplate (this project) - Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc and live editing.
+- [library-boilerplate-mocha](https://github.com/Ziv-Barber/library-boilerplate-mocha) - Rollup based javascript library boilerplate + babel 7, eslint, flow, mocha, esdoc and live editing.
 - [react-boilerplate](https://github.com/Ziv-Barber/react-boilerplate) - React 16.5.2 + babel 7 + jest + webpack 4 + flow + eslint + esdoc + live editing boilerplate.
+- [react-boilerplate-mocha](https://github.com/Ziv-Barber/react-boilerplate-mocha) - React 16.5.2 + babel 7 + mocha + webpack 4 + flow + eslint + esdoc + live editing boilerplate.
 
 <a name="credits"></a>
 ## Credit: ##

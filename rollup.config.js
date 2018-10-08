@@ -79,7 +79,7 @@ let config = [
     output: {
       file: packageJson.browser,
       format: 'iife',
-      name: packageJson.name.replace(/-/, '_')
+      name: packageJson.name.replace(/-/g, '_')
     },
     plugins: [
       babel({

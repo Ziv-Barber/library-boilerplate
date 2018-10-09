@@ -16,7 +16,6 @@ Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc
 - [Getting Started](#getstart)
 - [Features](#features)
 - [Installation](#inst)
-- [Running](#run)
 - [API](#ref)
 - [The source code](#code)
 - [Variations](#other)
@@ -81,7 +80,7 @@ This project is using the following awesome libraries/utilities/services:
 - [better-npm-run](https://github.com/benoror/better-npm-run)
 - [commitizen](http://commitizen.github.io/cz-cli)
 - [esdoc](https://esdoc.org/)
-- [eslint](https://eslint.org/)
+- [ESLint](https://eslint.org/)
 - [flow](https://flow.org/)
 - [jest](https://jestjs.io/)
 - [npm-run-all](https://github.com/mysticatea/npm-run-all)
@@ -91,22 +90,16 @@ This project is using the following awesome libraries/utilities/services:
 <a name="inst"></a>
 ## Installation: ##
 
-via Git:
+via [**yarn**](https://yarnpkg.com/):
 
 ```bash
-$ git clone git://github.com/Ziv-Barber/library-boilerplate.git
+$ yarn add {{name}}
 ```
 
-via yarn:
+via **npm**:
 
 ```bash
-$ yarn add library-boilerplate
-```
-
-via npm:
-
-```bash
-$ npm install library-boilerplate
+$ npm install {{name}}
 ```
 
 <a name="ref"></a>
@@ -125,63 +118,34 @@ $ npm run esdoc
 ```
 
 <a name="code"></a>
-## The source code: ##
+## :coffee: The source code: ##
 
-- lib - all the sources.
-  - types - put here all the flow type declarations.
-- __tests__ - all the tests.
-- .editorconfig - coding style for this project.
+### The project structure: ###
 
-### Scripts: ###
+- library-boilerplate/lib/ - All the sources should be here.
+- library-boilerplate/lib/types/ - All the flow type declarations.
+- library-boilerplate/__tests__/ - All the unit tests.
+- rollup.config.js - The configuration for [rollup](https://rollupjs.org/).
+- .editorconfig - The [coding style settings](editorconfig.org) for this project.
 
-- start
-- build
-- clean
-- test
-- flow
-- lint
+### Npm scripts: ###
 
-### Tests: ###
-
-Tests:
+When using with **yarn** then use the following syntax:
 
 ```bash
-yarn test
+$ yarn name params
 ```
 
-or:
+Or with just **npm**:
 
 ```bash
-npm test
+$ npm name params
 ```
 
-### Flow: ###
-
-Flow check (if you don't have a flow plugin in your IDE):
-
-```bash
-yarn flow
-```
-
-or:
-
-```bash
-npm flow
-```
-
-### Lint: ###
-
-Lint check (if you don't have a plugin in your IDE):
-
-```bash
-yarn lint
-```
-
-or:
-
-```bash
-npm lint
-```
+- **start** - Run the code in development mode.
+- **build** - Build the production mode.
+- **lint** - Lint :cop: using [ESLint](https://eslint.org/).
+- **flow** - [Flow](https://flow.org/) checks.
 
 <a name="other"></a>
 ## Variations: ##

@@ -1,6 +1,6 @@
 # library-boilerplate
 
-Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc and live editing.
+Rollup based javascript library boilerplate featuring Babel 7, ESLint, flow, jest, ESDoc, Rollup, semantic-release and live debugging.
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![coverage statements](./coverage/badge-statements.svg)](https://github.com/pamepeixinho/jest-coverage-badges)
@@ -14,9 +14,9 @@ Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc
 ![library-boilerplate logo](https://cdn-images-1.medium.com/max/1500/1*LQbS9RgHy93y9JH8ltejuQ.jpeg)
 
 - [Getting Started](#getstart)
-- [Features](#features)
+- [External dependencies](#dependencies)
 - [Installation](#inst)
-- [API](#ref)
+- [The API](#ref)
 - [The source code](#code)
 - [Variations](#other)
 - [Credit](#credit)
@@ -71,15 +71,15 @@ Allow doing npm publish automatically by [semantic-release](https://github.com/s
 - You need a npm token (see [here](https://docs.npmjs.com/getting-started/working_with_tokens#how-to-create-new-tokens)) and add it as the NPM_TOKEN environment variable to Travis-CI like you did with the GH_TOKEN for github.
 - Update the release section in package.json and add '@semantic-release/npm' to both 'prepare', 'publish' and 'verifyConditions'.
 
-<a name="features"></a>
-## Features: ##
+<a name="dependencies"></a>
+## External dependencies: ##
 
 This project is using the following awesome libraries/utilities/services:
 
 - [babel 7](https://babeljs.io/)
 - [better-npm-run](https://github.com/benoror/better-npm-run)
 - [commitizen](http://commitizen.github.io/cz-cli)
-- [esdoc](https://esdoc.org/)
+- [ESDoc](https://esdoc.org/)
 - [ESLint](https://eslint.org/)
 - [flow](https://flow.org/)
 - [jest](https://jestjs.io/)
@@ -93,17 +93,17 @@ This project is using the following awesome libraries/utilities/services:
 via [**yarn**](https://yarnpkg.com/):
 
 ```bash
-$ yarn add {{name}}
+$ yarn add library-boilerplate
 ```
 
 via **npm**:
 
 ```bash
-$ npm install {{name}}
+$ npm install library-boilerplate
 ```
 
 <a name="ref"></a>
-## API: ##
+## The API: ##
 
 To create the library api:
 
@@ -122,11 +122,13 @@ $ npm run esdoc
 
 ### The project structure: ###
 
+```
 - library-boilerplate/lib/ - All the sources should be here.
 - library-boilerplate/lib/types/ - All the flow type declarations.
 - library-boilerplate/__tests__/ - All the unit tests.
 - rollup.config.js - The configuration for [rollup](https://rollupjs.org/).
-- .editorconfig - The [coding style settings](editorconfig.org) for this project.
+- .editorconfig - The [coding style settings](https://editorconfig.org/) for this project.
+```
 
 ### Npm scripts: ###
 
@@ -150,10 +152,10 @@ $ npm name params
 <a name="other"></a>
 ## Variations: ##
 
-- library-boilerplate (this project) - Rollup based javascript library boilerplate + babel 7, eslint, flow, jest, esdoc and live editing.
-- [library-boilerplate-mocha](https://github.com/Ziv-Barber/library-boilerplate-mocha) - Rollup based javascript library boilerplate + babel 7, eslint, flow, mocha, esdoc and live editing.
-- [react-boilerplate](https://github.com/Ziv-Barber/react-boilerplate) - React 16.5.2 + babel 7 + jest + webpack 4 + flow + eslint + esdoc + live editing boilerplate.
-- [react-boilerplate-mocha](https://github.com/Ziv-Barber/react-boilerplate-mocha) - React 16.5.2 + babel 7 + mocha + webpack 4 + flow + eslint + esdoc + live editing boilerplate.
+- library-boilerplate (this project) - Rollup based javascript library boilerplate featuring Babel 7, ESLint, flow, jest, ESDoc, Rollup, semantic-release and live debugging.
+- [library-boilerplate-mocha]() - Rollup based javascript library boilerplate featuring Babel 7, ESLint, flow, mocha, ESDoc, Rollup, semantic-release and live debugging.
+- [react-boilerplate]() - React 16.5 based frontend boilerplate featuring Babel 7, ESLint, flow, Jest, ESDoc, Webpack 4, React 16.5, Redux, redux-thunk, semantic-release and react-hot-loader debugging.
+- [react-boilerplate-mocha]() - React 16.5 based frontend boilerplate featuring Babel 7, ESLint, flow, mocha, ESDoc, Webpack 4, React 16.5, Redux, redux-thunk, semantic-release and react-hot-loader debugging.
 
 <a name="credits"></a>
 ## Credit: ##

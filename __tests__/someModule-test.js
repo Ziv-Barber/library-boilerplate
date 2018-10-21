@@ -1,15 +1,9 @@
-import * as someModule from '../lib/someModule'
+import someModule from '../lib/someModule'
 
 /** @test {someModule} */
 describe('someModule test suits', function () {
-  // Executed before each test:
-  beforeEach(done => {
-    done()
-  })
-
-  test('#test ()', done => {
-    expect(someModule).toBeDefined()
-    // assert(123 === 123)
-    done()
+  /** @test {someModule#add} */
+  test('#add()', () => {
+    expect(someModule.add(4, 4)).toBe(8)
   })
 })

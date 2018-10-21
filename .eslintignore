@@ -2,9 +2,6 @@ node_modules
 coverage
 flow-typed
 dist
-doc
+docs
 .DS_Store
-
-\#*#
-
 .vscode

@@ -1,5 +1,5 @@
 {
-  "source": "./src",
+  "source": "./lib",
   "destination": "./docs",
   "includes": [
     "\\.js$"
@@ -19,6 +19,12 @@
     },
     {
       "name": "esdoc-brand-plugin"
+    },
+    {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": {
+        "all": true
+      }
     }
   ],
   "option": {
@@ -28,8 +34,17 @@
     "coverage": {
       "enable": true
     },
+    "brand": {
+      "logo": "library-boilerplate",
+      "title": "library-boilerplate",
+      "description": "Rollup based javascript library boilerplate featuring Babel 7, ESLint, flow, jest, ESDoc, Rollup, semantic-release and live debugging.",
+      "repository": "git://github.com/Ziv-Barber/library-boilerplate.git",
+      "site": "git://github.com/Ziv-Barber/library-boilerplate.git",
+      "author": "git://github.com/Ziv-Barber/library-boilerplate.git",
+      "image": "./logo.svg"
+    },
     "test": {
-      "source": "./test/",
+      "source": "./__tests__/",
       "interfaces": [
         "describe",
         "it",
